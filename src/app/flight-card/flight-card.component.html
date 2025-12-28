@@ -1,0 +1,24 @@
+<div class="card" *ngIf="flight">
+    <div class="header">
+        <span class="airline">Compagnie : {{ flight.validatingAirlineCodes[0] }}</span>
+        <span class="price">{{ flight.price.total }} €</span>
+    </div>
+
+    <div class="route">
+        <div class="city">
+            <strong>{{ flight.itineraries[0].segments[0].departure.iataCode }}</strong>
+            <p>{{ flight.itineraries[0].segments[0].departure.at | date:'shortTime' }}</p>
+        </div>
+
+        <div class="arrow">➝</div>
+
+        <div class="city">
+            <strong>{{ flight.itineraries[0].segments[0].arrival.iataCode }}</strong>
+            <p>{{ flight.itineraries[0].segments[0].arrival.at | date:'shortTime' }}</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button>Réserver</button>
+    </div>
+</div>

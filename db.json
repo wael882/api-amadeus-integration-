@@ -1,0 +1,44 @@
+{
+    "flights": [
+        {
+            "id": 1,
+            "destination": "Paris CDG",
+            "flightNumber": "AF123",
+            "time": "14:30",
+            "status": "On Time",
+            "gate": "A12"
+        },
+        {
+            "id": 2,
+            "destination": "New York JFK",
+            "flightNumber": "DL404",
+            "time": "15:00",
+            "status": "Delayed",
+            "gate": "B04"
+        },
+        {
+            "id": 3,
+            "destination": "Tokyo HND",
+            "flightNumber": "JL089",
+            "time": "15:45",
+            "status": "Boarding",
+            "gate": "C10"
+        },
+        {
+            "id": 4,
+            "destination": "Dubai DXB",
+            "flightNumber": "EK076",
+            "time": "16:15",
+            "status": "On Time",
+            "gate": "A05"
+        },
+        {
+            "id": 5,
+            "destination": "London LHR",
+            "flightNumber": "BA302",
+            "time": "16:45",
+            "status": "Cancelled",
+            "gate": "-"
+        }
+    ]
+}

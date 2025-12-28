@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>
+    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+      <path d="M280-80v-80l120-80v-160L80-280v-120l320-200v-200q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800v200l320 200v120L560-400v160l120 80v80l-200-60-200 60Z"/>
+    </svg>
+    Résultats de recherche ({{ flights.length }} vols)
+  </h1>
+
+  <div class="results-grid">
+    <app-flight-card *ngFor="let flightItem of flights" [flight]="flightItem">
+    </app-flight-card>
+  </div>
+</div>
